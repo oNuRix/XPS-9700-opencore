@@ -16,6 +16,18 @@
 
 ## Before starting: It is your own responsibility to use modgrubshell and VoltageShift. I am not responsible for any issues or damage that may occur.
 
+## BIOS
+| Menu | Setting | State |
+| ---- | ------- | ----- |
+| Boot Configuration | Enable Secure Boot | Off |
+| Pre-boot Behavior | Fastboot | Thorough |
+| Integrated Devices | Thunderbolt Security Level | No Security |
+| Storage | Sata Operation | AHCI |
+| Power | Enable Lid Switch | On |
+| FingerPrinf | ON | For Windows |
+| Security | Intel Software Guard Extensions | OFF |
+| TPM | OFF |
+
 ## Wifi
 - Work Thanks! [laobamac](https://github.com/laobamac/OCLP-Mod)
   
@@ -34,8 +46,10 @@
 - Thanks [jkbuha](https://github.com/jkbuha)
 ## VoltageShift configuration
 - Thanks [sicreative](https://github.com/sicreative/VoltageShift)
-- With voltageShift thermal not get too hot and fans runs smoothly
-- i use sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 25 45 -1
+- With VoltageShift, temperatures stay under control and the fans run more smoothly.
+I personally use:
+- sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 25 45 -1
+- This profile keeps the system cooler while maintaining good performance and stable fan behavior.
 ## For more performance You can use the following settings:
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 90 -1
 - For a balanced profile:
