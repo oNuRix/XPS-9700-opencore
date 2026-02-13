@@ -1,6 +1,7 @@
 # Dell XPS 9700 
 
 <img width="591" height="652" alt="XpsBook" src="https://github.com/user-attachments/assets/78abc7c7-3f54-4cbc-804d-c2e72202b6e5" />
+<img width="576" height="241" alt="voltageshift" src="https://github.com/user-attachments/assets/aedad77d-ba1c-473f-bd97-05c6cf593ca4" />
 
 ## Specs
 
