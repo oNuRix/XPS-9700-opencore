@@ -40,6 +40,7 @@
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 90 -1
 - or
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 65 -1
+- I added 
 
 
 ## Not Wworking
