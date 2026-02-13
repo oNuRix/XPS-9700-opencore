@@ -23,7 +23,7 @@
 - Don't forget too change SMBIOS!
 - [Gensmbios](https://github.com/corpnewt/GenSMBIOS) (better if you know MAC address for rom section in OC)
 - [Unlock CFG ](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually)
-- You can with modGRUBShell
+- You can set setup_var with modGRUBShell
 ## I used: 
 - setup_var PchSetup 0x5 0x00 # Disable RTC Memory Lock
 - setup_var CpuSetup 0x3E 0x00 # Disable CFG Lock
@@ -32,20 +32,20 @@
 - setup_var SaSetup  0xF6 0x03 # Total DVMT = MAX
 - setup_var CpuSetup 0x1B7  0x01 # Enable OverClocking Feature for voltageshift
 - Thanks [jkbuha](https://github.com/jkbuha)
-## VoltageShift
+## VoltageShift configuration
 - Thanks [sicreative](https://github.com/sicreative/VoltageShift)
 - With voltageShift thermal not get too hot and fans runs smoothly
 - i use sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 25 45 -1
-## Can use: For more performance
+## For more performance You can use the following settings:
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 90 -1
-- or
+- For a balanced profile:
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 65 -1
-- I added 
-
+- It is recommended to install SleepWatcher to restart VoltageShift after wake.
+This is necessary because Dell resets the EC (Embedded Controller) when the device goes to sleep and wakes up.
 
 ## Not Wworking
-- Brightness control keys (use Fn+S/Fn+B instead) or you can change in keyboard setting too F6+F7
-- over typ c HDMI coldplug (hotplug is OK)
-- Audio 
+- Brightness control keys: Use Fn + S / Fn + B instead, or change the shortcut in Keyboard Settings (instead of F6 / F7)
+- USB-C HDMI cold plug issue: Not working when connected before boot (hot plug works fine).
+- Audio not working alc711 not supported!
 
 
