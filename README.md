@@ -1,7 +1,6 @@
 # Dell XPS 9700 
 
 <img width="591" height="652" alt="XpsBook" src="https://github.com/user-attachments/assets/78abc7c7-3f54-4cbc-804d-c2e72202b6e5" />
-<img width="734" height="336" alt="Capture d’écran 2026-02-18 à 13 03 38" src="https://github.com/user-attachments/assets/ac455208-57f6-4a10-bf8d-de4715cd4b10" />
 
 
 ## Specs
@@ -11,9 +10,10 @@
 | Computer model      | Dell XPS 9700     |
 | Processor           | Intel Core i7-10875H   |
 | Memory              | 64GB (2X32) 3200 DDR4 |
-| SSD                 | Samsung 990 PRO 2Tb 500GB for MacOS| 
+| SSD                 | SK hynix HFM512GDJTNG 250 for Windows 250 for NixOS |
+|                     | WD_BLACK SN770 500GB for MacOS| 
 | Integrated Graphics | Intel UHD Graphics 630 |
-| Display             | 17" 4k  |
+| Display             | 17" 4k Touchscreen (disabled, don't need) |
 | Wireless Card       | Intel killer 1650s|
 
 ## Before starting: It is your own responsibility to use modgrubshell and VoltageShift. I am not responsible for any issues or damage that may occur.
@@ -59,6 +59,11 @@ I personally use:
 - Sudo ./voltageshift buildlaunchd -130 -75 -90 0 0 0 1 45 65 -1
 - It is recommended to install SleepWatcher to restart VoltageShift after wake.
 This is necessary because Dell resets the EC (Embedded Controller) when the device goes to sleep and wakes up.
+
+## Apps
+- The APPs folder contains two menubar applications. One is voltageshift, and the other is for one-click fan control.
+- Voltageshift is located in /Library/Application Support/VoltageShift, and smc-helper should be in /usr/local/bin/.
+- Thanks to [SoloTeamDev](https://github.com/SoloTeamDev) for the smc-helper.
 
 ## Not Wworking
 - Brightness control keys: Use Fn + S / Fn + B instead, or change the shortcut in Keyboard Settings (instead of F6 / F7)
