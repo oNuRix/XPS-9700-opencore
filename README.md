@@ -65,7 +65,7 @@ This is necessary because Dell resets the EC (Embedded Controller) when the devi
 - Voltageshift is located in /Library/Application Support/VoltageShift, and smc-helper should be in /usr/local/bin/.
 - Thanks to [SoloTeamDev](https://github.com/SoloTeamDev) for the smc-helper.
 
-## Not Wworking
+## Not Working
 - Brightness control keys: Use Fn + S / Fn + B instead, or change the shortcut in Keyboard Settings (instead of F6 / F7)
 - USB-C HDMI cold plug issue: Not working when connected before boot (hot plug works fine).
 - Audio not working alc711 not supported!
